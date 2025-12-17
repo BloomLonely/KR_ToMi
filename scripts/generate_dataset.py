@@ -7,8 +7,13 @@
 
 import argparse
 import os
-from tomi.story import StoryType, generate_story
-from tomi.world import World
+import sys
+
+# Add parent directory to path for imports
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
+
+from src.story import StoryType, generate_story
+from src.world import World
 from tqdm import tqdm
 import numpy as np
 import random
@@ -55,7 +60,7 @@ if __name__ == "__main__":
         default=1000,
         help="Number of stories to generate for each type",
     )
-    parser.add_argument("--out-dir", "-o", default="data", help="Output directory")
+    parser.add_argument("--out-dir", "-o", default="data/english", help="Output directory")
     opt = parser.parse_args()
     np.random.seed(opt.seed)
     random.seed(opt.seed)

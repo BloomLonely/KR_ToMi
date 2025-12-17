@@ -1,22 +1,60 @@
-# ToMi
-----
+# KR_ToMi: Korean Theory of Mind Dataset
 
-This repository contains the code to generate the dataset used in our EMNLP 2019 paper: ["Revisiting the Evaluation of Theory of Mind through Question Answering"](https://www.aclweb.org/anthology/D19-1598.pdf).  The code is heavily based off of the following [repository](https://github.com/kayburns/tom-qa-dataset) and [paper](https://arxiv.org/abs/1808.09352)
+[![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
 
-## Generating the data
+Korean adaptation of the ToMi (Theory of Mind) dataset for evaluating false belief understanding in Korean language models.
 
-```
-pip install tqdm
-git clone git@github.com:facebookresearch/ToMi.git
-cd ToMi
-python main.py
-```
+## Project Overview
 
-This will produce six files in the `data` directory of the repository:
+This project adapts the [ToMi dataset](https://github.com/facebookresearch/ToMi) from Facebook Research to Korean, enabling comparative analysis of Theory of Mind capabilities between English and Korean language models (e.g., EXAONE).
+
+## Quick Start
+
+### Installation
 
 ```bash
-$ ls data
-test.trace  test.txt  train.trace  train.txt  val.trace  val.txt
+pip install -r requirements.txt
+```
+
+### Generate English Dataset
+
+```bash
+python scripts/generate_dataset.py --num-stories 1000 --out-dir data/english
+```
+
+### Generate Korean Dataset (Coming Soon)
+
+```bash
+python scripts/generate_dataset.py --num-stories 1000 --out-dir data/korean --lang ko
+```
+
+## Project Structure
+
+```
+KR_ToMi/
+├── data/                      # Generated datasets
+│   ├── english/              # English ToMi dataset
+│   │   ├── fb_all_train.txt
+│   │   ├── fb_all_train.trace
+│   │   ├── fb_all_val.txt
+│   │   ├── fb_all_val.trace
+│   │   ├── fb_all_test.txt
+│   │   └── fb_all_test.trace
+│   └── korean/               # Korean ToMi dataset (to be generated)
+├── src/                       # Source code
+│   ├── __init__.py
+│   ├── world.py              # Entity management
+│   ├── oracle.py             # Belief tracking system
+│   ├── story.py              # Story generation logic
+│   ├── actions.py            # Action types and templates
+│   └── world.json            # Entity definitions
+├── scripts/                   # Executable scripts
+│   └── generate_dataset.py   # Dataset generation script
+├── docs/                      # Documentation
+│   ├── README.md             # Original ToMi README
+│   └── CLAUDE.md             # Project analysis and guide
+├── requirements.txt           # Python dependencies
+└── README.md                  # This file
 ```
 
 ## Data

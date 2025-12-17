@@ -132,7 +132,35 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
-# DS_Store & CLAUDE
+# DS_Store & macOS
 .DS_Store
+
+# IDE and Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Project specific
+.claude/
+*.zip
 CLAUDE.md
-.claude
+
+# Model outputs and checkpoints
+models/
+checkpoints/
+outputs/
+runs/
+wandb/
+
+# Experiment results
+results/
+experiments/
+
+# Large data files (optionally track with Git LFS)
+# Uncomment if you want to ignore generated datasets
+# data/english/*.txt
+# data/english/*.trace
+# data/korean/*.txt
+# data/korean/*.trace
