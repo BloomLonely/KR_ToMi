@@ -1,0 +1,156 @@
+1 Lily entered the workshop.
+2 Nathan dislikes the boots
+3 Noah entered the workshop.
+4 The underpants is in the basket.
+5 Noah moved the underpants to the pantry.
+6 Lily exited the workshop.
+7 Where was the underpants at the beginning?	basket	1
+1 Lily entered the workshop.
+2 Nathan dislikes the boots
+3 Noah entered the workshop.
+4 The underpants is in the basket.
+5 Noah moved the underpants to the pantry.
+6 Lily exited the workshop.
+7 Where will Noah look for the underpants?	pantry	1
+1 Lily entered the workshop.
+2 Nathan dislikes the boots
+3 Noah entered the workshop.
+4 The underpants is in the basket.
+5 Noah moved the underpants to the pantry.
+6 Lily exited the workshop.
+7 Where does Noah think that Lily searches for the underpants?	pantry	1
+1 Lily entered the workshop.
+2 Nathan dislikes the boots
+3 Noah entered the workshop.
+4 The underpants is in the basket.
+5 Noah moved the underpants to the pantry.
+6 Lily exited the workshop.
+7 Where is the underpants really?	pantry	1
+1 Lily entered the workshop.
+2 Nathan dislikes the boots
+3 Noah entered the workshop.
+4 The underpants is in the basket.
+5 Noah moved the underpants to the pantry.
+6 Lily exited the workshop.
+7 Where will Lily look for the underpants?	pantry	1
+1 Lily entered the workshop.
+2 Nathan dislikes the boots
+3 Noah entered the workshop.
+4 The underpants is in the basket.
+5 Noah moved the underpants to the pantry.
+6 Lily exited the workshop.
+7 Where does Lily think that Noah searches for the underpants?	pantry	1
+1 Mason entered the porch.
+2 James is in the porch.
+3 Emma entered the porch.
+4 The pants is in the box.
+5 Mason moved the pants to the treasure_chest.
+6 James exited the porch.
+7 Emma exited the porch.
+8 Mason exited the porch.
+9 James entered the garage.
+10 Where was the pants at the beginning?	box	1
+1 Mason entered the porch.
+2 James is in the porch.
+3 Emma entered the porch.
+4 The pants is in the box.
+5 Mason moved the pants to the treasure_chest.
+6 James exited the porch.
+7 Emma exited the porch.
+8 Mason exited the porch.
+9 James entered the garage.
+10 Where will Mason look for the pants?	treasure_chest	1
+1 Mason entered the porch.
+2 James is in the porch.
+3 Emma entered the porch.
+4 The pants is in the box.
+5 Mason moved the pants to the treasure_chest.
+6 James exited the porch.
+7 Emma exited the porch.
+8 Mason exited the porch.
+9 James entered the garage.
+10 Where does Mason think that James searches for the pants?	treasure_chest	1
+1 Mason entered the porch.
+2 James is in the porch.
+3 Emma entered the porch.
+4 The pants is in the box.
+5 Mason moved the pants to the treasure_chest.
+6 James exited the porch.
+7 Emma exited the porch.
+8 Mason exited the porch.
+9 James entered the garage.
+10 Where is the pants really?	treasure_chest	1
+1 Mason entered the porch.
+2 James is in the porch.
+3 Emma entered the porch.
+4 The pants is in the box.
+5 Mason moved the pants to the treasure_chest.
+6 James exited the porch.
+7 Emma exited the porch.
+8 Mason exited the porch.
+9 James entered the garage.
+10 Where will James look for the pants?	treasure_chest	1
+1 Mason entered the porch.
+2 James is in the porch.
+3 Emma entered the porch.
+4 The pants is in the box.
+5 Mason moved the pants to the treasure_chest.
+6 James exited the porch.
+7 Emma exited the porch.
+8 Mason exited the porch.
+9 James entered the garage.
+10 Where does James think that Mason searches for the pants?	treasure_chest	1
+1 Jack entered the staircase.
+2 Mila entered the staircase.
+3 Noah entered the staircase.
+4 The slippers is in the crate.
+5 Jack exited the staircase.
+6 Jack likes the pumpkin
+7 Mila exited the staircase.
+8 Noah moved the slippers to the envelope.
+9 Where was the slippers at the beginning?	crate	1
+1 Jack entered the staircase.
+2 Mila entered the staircase.
+3 Noah entered the staircase.
+4 The slippers is in the crate.
+5 Jack exited the staircase.
+6 Jack likes the pumpkin
+7 Mila exited the staircase.
+8 Noah moved the slippers to the envelope.
+9 Where will Noah look for the slippers?	envelope	1
+1 Jack entered the staircase.
+2 Mila entered the staircase.
+3 Noah entered the staircase.
+4 The slippers is in the crate.
+5 Jack exited the staircase.
+6 Jack likes the pumpkin
+7 Mila exited the staircase.
+8 Noah moved the slippers to the envelope.
+9 Where does Noah think that Jack searches for the slippers?	envelope	1
+1 Jack entered the staircase.
+2 Mila entered the staircase.
+3 Noah entered the staircase.
+4 The slippers is in the crate.
+5 Jack exited the staircase.
+6 Jack likes the pumpkin
+7 Mila exited the staircase.
+8 Noah moved the slippers to the envelope.
+9 Where is the slippers really?	envelope	1
+1 Jack entered the staircase.
+2 Mila entered the staircase.
+3 Noah entered the staircase.
+4 The slippers is in the crate.
+5 Jack exited the staircase.
+6 Jack likes the pumpkin
+7 Mila exited the staircase.
+8 Noah moved the slippers to the envelope.
+9 Where will Jack look for the slippers?	crate	1
+1 Jack entered the staircase.
+2 Mila entered the staircase.
+3 Noah entered the staircase.
+4 The slippers is in the crate.
+5 Jack exited the staircase.
+6 Jack likes the pumpkin
+7 Mila exited the staircase.
+8 Noah moved the slippers to the envelope.
+9 Where does Jack think that Noah searches for the slippers?	envelope	1

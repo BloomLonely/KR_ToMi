@@ -1,0 +1,144 @@
+1 Elizabeth entered the playroom.
+2 Olivia entered the playroom.
+3 The dress is in the bathtub.
+4 Elizabeth exited the playroom.
+5 Elizabeth entered the playroom.
+6 Olivia moved the dress to the cupboard.
+7 Where was the dress at the beginning?	bathtub	1
+1 Elizabeth entered the playroom.
+2 Olivia entered the playroom.
+3 The dress is in the bathtub.
+4 Elizabeth exited the playroom.
+5 Elizabeth entered the playroom.
+6 Olivia moved the dress to the cupboard.
+7 Where will Olivia look for the dress?	cupboard	1
+1 Elizabeth entered the playroom.
+2 Olivia entered the playroom.
+3 The dress is in the bathtub.
+4 Elizabeth exited the playroom.
+5 Elizabeth entered the playroom.
+6 Olivia moved the dress to the cupboard.
+7 Where does Olivia think that Elizabeth searches for the dress?	cupboard	1
+1 Elizabeth entered the playroom.
+2 Olivia entered the playroom.
+3 The dress is in the bathtub.
+4 Elizabeth exited the playroom.
+5 Elizabeth entered the playroom.
+6 Olivia moved the dress to the cupboard.
+7 Where is the dress really?	cupboard	1
+1 Elizabeth entered the playroom.
+2 Olivia entered the playroom.
+3 The dress is in the bathtub.
+4 Elizabeth exited the playroom.
+5 Elizabeth entered the playroom.
+6 Olivia moved the dress to the cupboard.
+7 Where will Elizabeth look for the dress?	cupboard	1
+1 Elizabeth entered the playroom.
+2 Olivia entered the playroom.
+3 The dress is in the bathtub.
+4 Elizabeth exited the playroom.
+5 Elizabeth entered the playroom.
+6 Olivia moved the dress to the cupboard.
+7 Where does Elizabeth think that Olivia searches for the dress?	cupboard	1
+1 Charlotte entered the master_bedroom.
+2 Olivia entered the master_bedroom.
+3 The jacket is in the bucket.
+4 Jacob entered the master_bedroom.
+5 Charlotte exited the master_bedroom.
+6 Olivia moved the jacket to the drawer.
+7 Where was the jacket at the beginning?	bucket	1
+1 Charlotte entered the master_bedroom.
+2 Olivia entered the master_bedroom.
+3 The jacket is in the bucket.
+4 Jacob entered the master_bedroom.
+5 Charlotte exited the master_bedroom.
+6 Olivia moved the jacket to the drawer.
+7 Where will Olivia look for the jacket?	drawer	1
+1 Charlotte entered the master_bedroom.
+2 Olivia entered the master_bedroom.
+3 The jacket is in the bucket.
+4 Jacob entered the master_bedroom.
+5 Charlotte exited the master_bedroom.
+6 Olivia moved the jacket to the drawer.
+7 Where does Olivia think that Charlotte searches for the jacket?	drawer	1
+1 Charlotte entered the master_bedroom.
+2 Olivia entered the master_bedroom.
+3 The jacket is in the bucket.
+4 Jacob entered the master_bedroom.
+5 Charlotte exited the master_bedroom.
+6 Olivia moved the jacket to the drawer.
+7 Where is the jacket really?	drawer	1
+1 Charlotte entered the master_bedroom.
+2 Olivia entered the master_bedroom.
+3 The jacket is in the bucket.
+4 Jacob entered the master_bedroom.
+5 Charlotte exited the master_bedroom.
+6 Olivia moved the jacket to the drawer.
+7 Where will Charlotte look for the jacket?	bucket	1
+1 Charlotte entered the master_bedroom.
+2 Olivia entered the master_bedroom.
+3 The jacket is in the bucket.
+4 Jacob entered the master_bedroom.
+5 Charlotte exited the master_bedroom.
+6 Olivia moved the jacket to the drawer.
+7 Where does Charlotte think that Olivia searches for the jacket?	drawer	1
+1 Mia entered the den.
+2 Logan entered the den.
+3 Ella hates the radish
+4 The persimmon is in the bottle.
+5 Mia exited the den.
+6 Logan moved the persimmon to the crate.
+7 Logan exited the den.
+8 Ella entered the den.
+9 Mia entered the den.
+10 Where was the persimmon at the beginning?	bottle	1
+1 Mia entered the den.
+2 Logan entered the den.
+3 Ella hates the radish
+4 The persimmon is in the bottle.
+5 Mia exited the den.
+6 Logan moved the persimmon to the crate.
+7 Logan exited the den.
+8 Ella entered the den.
+9 Mia entered the den.
+10 Where will Logan look for the persimmon?	crate	1
+1 Mia entered the den.
+2 Logan entered the den.
+3 Ella hates the radish
+4 The persimmon is in the bottle.
+5 Mia exited the den.
+6 Logan moved the persimmon to the crate.
+7 Logan exited the den.
+8 Ella entered the den.
+9 Mia entered the den.
+10 Where does Logan think that Mia searches for the persimmon?	bottle	1
+1 Mia entered the den.
+2 Logan entered the den.
+3 Ella hates the radish
+4 The persimmon is in the bottle.
+5 Mia exited the den.
+6 Logan moved the persimmon to the crate.
+7 Logan exited the den.
+8 Ella entered the den.
+9 Mia entered the den.
+10 Where is the persimmon really?	crate	1
+1 Mia entered the den.
+2 Logan entered the den.
+3 Ella hates the radish
+4 The persimmon is in the bottle.
+5 Mia exited the den.
+6 Logan moved the persimmon to the crate.
+7 Logan exited the den.
+8 Ella entered the den.
+9 Mia entered the den.
+10 Where will Mia look for the persimmon?	crate	1
+1 Mia entered the den.
+2 Logan entered the den.
+3 Ella hates the radish
+4 The persimmon is in the bottle.
+5 Mia exited the den.
+6 Logan moved the persimmon to the crate.
+7 Logan exited the den.
+8 Ella entered the den.
+9 Mia entered the den.
+10 Where does Mia think that Logan searches for the persimmon?	bottle	1

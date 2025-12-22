@@ -1,0 +1,168 @@
+1 Oliver entered the porch.
+2 Owen entered the porch.
+3 Abigail entered the porch.
+4 The broccoli is in the bucket.
+5 Abigail exited the porch.
+6 Owen exited the porch.
+7 Owen hates the peach
+8 Oliver moved the broccoli to the pantry.
+9 Where was the broccoli at the beginning?	bucket	1
+1 Oliver entered the porch.
+2 Owen entered the porch.
+3 Abigail entered the porch.
+4 The broccoli is in the bucket.
+5 Abigail exited the porch.
+6 Owen exited the porch.
+7 Owen hates the peach
+8 Oliver moved the broccoli to the pantry.
+9 Where will Oliver look for the broccoli?	pantry	1
+1 Oliver entered the porch.
+2 Owen entered the porch.
+3 Abigail entered the porch.
+4 The broccoli is in the bucket.
+5 Abigail exited the porch.
+6 Owen exited the porch.
+7 Owen hates the peach
+8 Oliver moved the broccoli to the pantry.
+9 Where does Oliver think that Abigail searches for the broccoli?	pantry	1
+1 Oliver entered the porch.
+2 Owen entered the porch.
+3 Abigail entered the porch.
+4 The broccoli is in the bucket.
+5 Abigail exited the porch.
+6 Owen exited the porch.
+7 Owen hates the peach
+8 Oliver moved the broccoli to the pantry.
+9 Where is the broccoli really?	pantry	1
+1 Oliver entered the porch.
+2 Owen entered the porch.
+3 Abigail entered the porch.
+4 The broccoli is in the bucket.
+5 Abigail exited the porch.
+6 Owen exited the porch.
+7 Owen hates the peach
+8 Oliver moved the broccoli to the pantry.
+9 Where will Abigail look for the broccoli?	bucket	1
+1 Oliver entered the porch.
+2 Owen entered the porch.
+3 Abigail entered the porch.
+4 The broccoli is in the bucket.
+5 Abigail exited the porch.
+6 Owen exited the porch.
+7 Owen hates the peach
+8 Oliver moved the broccoli to the pantry.
+9 Where does Abigail think that Oliver searches for the broccoli?	pantry	1
+1 Logan loves the beans
+2 Ethan entered the office.
+3 Jayden entered the pantry.
+4 Logan entered the pantry.
+5 The pineapple is in the drawer.
+6 Jayden moved the pineapple to the bathtub.
+7 Logan exited the pantry.
+8 Ethan dislikes the tangerine
+9 Jayden exited the pantry.
+10 Logan entered the pantry.
+11 Where was the pineapple at the beginning?	drawer	1
+1 Logan loves the beans
+2 Ethan entered the office.
+3 Jayden entered the pantry.
+4 Logan entered the pantry.
+5 The pineapple is in the drawer.
+6 Jayden moved the pineapple to the bathtub.
+7 Logan exited the pantry.
+8 Ethan dislikes the tangerine
+9 Jayden exited the pantry.
+10 Logan entered the pantry.
+11 Where will Jayden look for the pineapple?	bathtub	1
+1 Logan loves the beans
+2 Ethan entered the office.
+3 Jayden entered the pantry.
+4 Logan entered the pantry.
+5 The pineapple is in the drawer.
+6 Jayden moved the pineapple to the bathtub.
+7 Logan exited the pantry.
+8 Ethan dislikes the tangerine
+9 Jayden exited the pantry.
+10 Logan entered the pantry.
+11 Where does Jayden think that Logan searches for the pineapple?	bathtub	1
+1 Logan loves the beans
+2 Ethan entered the office.
+3 Jayden entered the pantry.
+4 Logan entered the pantry.
+5 The pineapple is in the drawer.
+6 Jayden moved the pineapple to the bathtub.
+7 Logan exited the pantry.
+8 Ethan dislikes the tangerine
+9 Jayden exited the pantry.
+10 Logan entered the pantry.
+11 Where is the pineapple really?	bathtub	1
+1 Logan loves the beans
+2 Ethan entered the office.
+3 Jayden entered the pantry.
+4 Logan entered the pantry.
+5 The pineapple is in the drawer.
+6 Jayden moved the pineapple to the bathtub.
+7 Logan exited the pantry.
+8 Ethan dislikes the tangerine
+9 Jayden exited the pantry.
+10 Logan entered the pantry.
+11 Where will Logan look for the pineapple?	bathtub	1
+1 Logan loves the beans
+2 Ethan entered the office.
+3 Jayden entered the pantry.
+4 Logan entered the pantry.
+5 The pineapple is in the drawer.
+6 Jayden moved the pineapple to the bathtub.
+7 Logan exited the pantry.
+8 Ethan dislikes the tangerine
+9 Jayden exited the pantry.
+10 Logan entered the pantry.
+11 Where does Logan think that Jayden searches for the pineapple?	bathtub	1
+1 Mason entered the crawlspace.
+2 Mila entered the den.
+3 Mason exited the crawlspace.
+4 Carter entered the den.
+5 The trousers is in the cupboard.
+6 Carter moved the trousers to the box.
+7 Mila exited the den.
+8 Where was the trousers at the beginning?	cupboard	1
+1 Mason entered the crawlspace.
+2 Mila entered the den.
+3 Mason exited the crawlspace.
+4 Carter entered the den.
+5 The trousers is in the cupboard.
+6 Carter moved the trousers to the box.
+7 Mila exited the den.
+8 Where will Carter look for the trousers?	box	1
+1 Mason entered the crawlspace.
+2 Mila entered the den.
+3 Mason exited the crawlspace.
+4 Carter entered the den.
+5 The trousers is in the cupboard.
+6 Carter moved the trousers to the box.
+7 Mila exited the den.
+8 Where does Carter think that Mila searches for the trousers?	box	1
+1 Mason entered the crawlspace.
+2 Mila entered the den.
+3 Mason exited the crawlspace.
+4 Carter entered the den.
+5 The trousers is in the cupboard.
+6 Carter moved the trousers to the box.
+7 Mila exited the den.
+8 Where is the trousers really?	box	1
+1 Mason entered the crawlspace.
+2 Mila entered the den.
+3 Mason exited the crawlspace.
+4 Carter entered the den.
+5 The trousers is in the cupboard.
+6 Carter moved the trousers to the box.
+7 Mila exited the den.
+8 Where will Mila look for the trousers?	box	1
+1 Mason entered the crawlspace.
+2 Mila entered the den.
+3 Mason exited the crawlspace.
+4 Carter entered the den.
+5 The trousers is in the cupboard.
+6 Carter moved the trousers to the box.
+7 Mila exited the den.
+8 Where does Mila think that Carter searches for the trousers?	box	1
