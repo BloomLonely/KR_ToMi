@@ -1,0 +1,191 @@
+{
+  "model": "google/gemini-3-flash-preview",
+  "total_story_groups": 3,
+  "correct_stories": 0,
+  "joint_accuracy": 0.0,
+  "total_questions": 18,
+  "correct_questions": 11,
+  "average_accuracy": 61.111111111111114,
+  "results": [
+    {
+      "group_id": 0,
+      "all_correct": false,
+      "questions": [
+        {
+          "question": "Where was the underpants at the beginning?",
+          "correct_answer": "basket",
+          "predicted_answer": "basket",
+          "is_correct": true,
+          "type": "true_belief",
+          "category": "memory",
+          "full_trace": "enter_agent_1,enter_agent_0,agent_0_moves_obj,agent_1_exits,memory,true_belief"
+        },
+        {
+          "question": "Where will Noah look for the underpants?",
+          "correct_answer": "pantry",
+          "predicted_answer": "pantry",
+          "is_correct": true,
+          "type": "true_belief",
+          "category": "first_order_1_no_tom",
+          "full_trace": "enter_agent_1,enter_agent_0,agent_0_moves_obj,agent_1_exits,first_order_1_no_tom,true_belief"
+        },
+        {
+          "question": "Where does Noah think that Lily searches for the underpants?",
+          "correct_answer": "pantry",
+          "predicted_answer": "basket",
+          "is_correct": false,
+          "type": "true_belief",
+          "category": "second_order_1_no_tom",
+          "full_trace": "enter_agent_1,enter_agent_0,agent_0_moves_obj,agent_1_exits,second_order_1_no_tom,true_belief"
+        },
+        {
+          "question": "Where is the underpants really?",
+          "correct_answer": "pantry",
+          "predicted_answer": "pantry",
+          "is_correct": true,
+          "type": "true_belief",
+          "category": "reality",
+          "full_trace": "enter_agent_1,enter_agent_0,agent_0_moves_obj,agent_1_exits,reality,true_belief"
+        },
+        {
+          "question": "Where will Lily look for the underpants?",
+          "correct_answer": "pantry",
+          "predicted_answer": "basket",
+          "is_correct": false,
+          "type": "true_belief",
+          "category": "first_order_0_no_tom",
+          "full_trace": "enter_agent_1,enter_agent_0,agent_0_moves_obj,agent_1_exits,first_order_0_no_tom,true_belief"
+        },
+        {
+          "question": "Where does Lily think that Noah searches for the underpants?",
+          "correct_answer": "pantry",
+          "predicted_answer": "basket",
+          "is_correct": false,
+          "type": "true_belief",
+          "category": "second_order_0_no_tom",
+          "full_trace": "enter_agent_1,enter_agent_0,agent_0_moves_obj,agent_1_exits,second_order_0_no_tom,true_belief"
+        }
+      ]
+    },
+    {
+      "group_id": 1,
+      "all_correct": false,
+      "questions": [
+        {
+          "question": "Where was the pants at the beginning?",
+          "correct_answer": "box",
+          "predicted_answer": "box",
+          "is_correct": true,
+          "type": "second_order_false_belief",
+          "category": "memory",
+          "full_trace": "enter_agent_0,enter_agent_1,agent_2_enters,agent_0_moves_obj,agent_1_exits,agent_0_exits,agent_2_exits,agent_1_reenters_alt_loc,memory,second_order_false_belief"
+        },
+        {
+          "question": "Where will Mason look for the pants?",
+          "correct_answer": "treasure_chest",
+          "predicted_answer": "treasure_chest",
+          "is_correct": true,
+          "type": "second_order_false_belief",
+          "category": "first_order_0_no_tom",
+          "full_trace": "enter_agent_0,enter_agent_1,agent_2_enters,agent_0_moves_obj,agent_1_exits,agent_0_exits,agent_2_exits,agent_1_reenters_alt_loc,first_order_0_no_tom,second_order_false_belief"
+        },
+        {
+          "question": "Where does Mason think that James searches for the pants?",
+          "correct_answer": "treasure_chest",
+          "predicted_answer": "treasure_chest",
+          "is_correct": true,
+          "type": "second_order_false_belief",
+          "category": "second_order_0_no_tom",
+          "full_trace": "enter_agent_0,enter_agent_1,agent_2_enters,agent_0_moves_obj,agent_1_exits,agent_0_exits,agent_2_exits,agent_1_reenters_alt_loc,second_order_0_no_tom,second_order_false_belief"
+        },
+        {
+          "question": "Where is the pants really?",
+          "correct_answer": "treasure_chest",
+          "predicted_answer": "treasure_chest",
+          "is_correct": true,
+          "type": "second_order_false_belief",
+          "category": "reality",
+          "full_trace": "enter_agent_0,enter_agent_1,agent_2_enters,agent_0_moves_obj,agent_1_exits,agent_0_exits,agent_2_exits,agent_1_reenters_alt_loc,reality,second_order_false_belief"
+        },
+        {
+          "question": "Where will James look for the pants?",
+          "correct_answer": "treasure_chest",
+          "predicted_answer": "box",
+          "is_correct": false,
+          "type": "second_order_false_belief",
+          "category": "first_order_1_no_tom",
+          "full_trace": "enter_agent_0,enter_agent_1,agent_2_enters,agent_0_moves_obj,agent_1_exits,agent_0_exits,agent_2_exits,agent_1_reenters_alt_loc,first_order_1_no_tom,second_order_false_belief"
+        },
+        {
+          "question": "Where does James think that Mason searches for the pants?",
+          "correct_answer": "treasure_chest",
+          "predicted_answer": "box",
+          "is_correct": false,
+          "type": "second_order_false_belief",
+          "category": "second_order_1_no_tom",
+          "full_trace": "enter_agent_0,enter_agent_1,agent_2_enters,agent_0_moves_obj,agent_1_exits,agent_0_exits,agent_2_exits,agent_1_reenters_alt_loc,second_order_1_no_tom,second_order_false_belief"
+        }
+      ]
+    },
+    {
+      "group_id": 2,
+      "all_correct": false,
+      "questions": [
+        {
+          "question": "Where was the slippers at the beginning?",
+          "correct_answer": "crate",
+          "predicted_answer": "crate",
+          "is_correct": true,
+          "type": "false_belief",
+          "category": "memory",
+          "full_trace": "enter_agent_1,agent_2_enters,enter_agent_0,agent_1_exits,agent_0_moves_obj,agent_2_exits,memory,false_belief"
+        },
+        {
+          "question": "Where will Noah look for the slippers?",
+          "correct_answer": "envelope",
+          "predicted_answer": "envelope",
+          "is_correct": true,
+          "type": "false_belief",
+          "category": "first_order_1_no_tom",
+          "full_trace": "enter_agent_1,agent_2_enters,enter_agent_0,agent_1_exits,agent_0_moves_obj,agent_2_exits,first_order_1_no_tom,false_belief"
+        },
+        {
+          "question": "Where does Noah think that Jack searches for the slippers?",
+          "correct_answer": "envelope",
+          "predicted_answer": "crate",
+          "is_correct": false,
+          "type": "false_belief",
+          "category": "second_order_1_no_tom",
+          "full_trace": "enter_agent_1,agent_2_enters,enter_agent_0,agent_1_exits,agent_0_moves_obj,agent_2_exits,second_order_1_no_tom,false_belief"
+        },
+        {
+          "question": "Where is the slippers really?",
+          "correct_answer": "envelope",
+          "predicted_answer": "envelope",
+          "is_correct": true,
+          "type": "false_belief",
+          "category": "reality",
+          "full_trace": "enter_agent_1,agent_2_enters,enter_agent_0,agent_1_exits,agent_0_moves_obj,agent_2_exits,reality,false_belief"
+        },
+        {
+          "question": "Where will Jack look for the slippers?",
+          "correct_answer": "crate",
+          "predicted_answer": "crate",
+          "is_correct": true,
+          "type": "false_belief",
+          "category": "first_order_0_tom",
+          "full_trace": "enter_agent_1,agent_2_enters,enter_agent_0,agent_1_exits,agent_0_moves_obj,agent_2_exits,first_order_0_tom,false_belief"
+        },
+        {
+          "question": "Where does Jack think that Noah searches for the slippers?",
+          "correct_answer": "envelope",
+          "predicted_answer": "crate",
+          "is_correct": false,
+          "type": "false_belief",
+          "category": "second_order_0_no_tom",
+          "full_trace": "enter_agent_1,agent_2_enters,enter_agent_0,agent_1_exits,agent_0_moves_obj,agent_2_exits,second_order_0_no_tom,false_belief"
+        }
+      ]
+    }
+  ]
+}

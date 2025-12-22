@@ -155,7 +155,6 @@ runs/
 wandb/
 
 # Experiment results
-results/
 experiments/
 
 # Large data files (optionally track with Git LFS)
