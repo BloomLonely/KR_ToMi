@@ -6,9 +6,10 @@ from dotenv import load_dotenv
 # Load .env BEFORE importing other libraries
 load_dotenv()
 
-# Set HF_HOME before importing transformers
-if not os.getenv("HF_HOME"):
-    os.environ["HF_HOME"] = os.path.expanduser("~/.cache/huggingface")
+# FORCE set HF_HOME before importing transformers (override system defaults)
+os.environ["HF_HOME"] = os.path.expanduser("~/.cache/huggingface")
+os.environ["HF_HUB_CACHE"] = os.path.expanduser("~/.cache/huggingface/hub")
+os.environ["TRANSFORMERS_CACHE"] = os.path.expanduser("~/.cache/huggingface/hub")
 
 from typing import List, Dict
 import torch
