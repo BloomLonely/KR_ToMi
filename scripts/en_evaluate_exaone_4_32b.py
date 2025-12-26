@@ -8,8 +8,11 @@ from tqdm import tqdm
 import json
 from collections import defaultdict
 from datetime import datetime
+from dotenv import load_dotenv
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
+
+load_dotenv()
 
 
 def load_stories(txt_path: str) -> List[List[str]]:
@@ -285,12 +288,12 @@ def main():
     parser.add_argument(
         "--txt-path",
         type=str,
-        default="data/english/fb_all_test.txt",
+        default="data/english/test.txt",
     )
     parser.add_argument(
         "--trace-path",
         type=str,
-        default="data/english/fb_all_test.trace",
+        default="data/english/test.trace",
     )
     parser.add_argument(
         "--output",
@@ -309,6 +312,12 @@ def main():
     )
 
     args = parser.parse_args()
+
+    # Set GPU from environment variable
+    cuda_visible_devices = os.getenv("CUDA_VISIBLE_DEVICES")
+    if cuda_visible_devices:
+        os.environ["CUDA_VISIBLE_DEVICES"] = cuda_visible_devices
+        print(f"Using GPU: {cuda_visible_devices}")
 
     print("="*50)
     print("EXAONE-4.0-32B 모델 로딩 중...")
