@@ -119,12 +119,15 @@ def query_exaone(
             return_tensors="pt"
         )
 
-        # Generate response
+        # Create attention mask
+        attention_mask = torch.ones_like(input_ids)
+
+        # Generate response (deterministic, same as Gemini API with temperature=0.0)
         with torch.no_grad():
             outputs = model.generate(
                 input_ids.to(model.device),
+                attention_mask=attention_mask.to(model.device),
                 max_new_tokens=50,
-                temperature=0.0,
                 do_sample=False,
                 pad_token_id=tokenizer.eos_token_id
             )
