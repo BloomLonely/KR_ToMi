@@ -319,6 +319,29 @@ def main():
 
     args = parser.parse_args()
 
+    # DEBUG: Print environment variables
+    print("="*50)
+    print("DEBUG: Environment Variables")
+    print("="*50)
+    print(f"HF_HOME: {os.getenv('HF_HOME')}")
+    print(f"CUDA_VISIBLE_DEVICES: {os.getenv('CUDA_VISIBLE_DEVICES')}")
+    print(f"XDG_CACHE_HOME: {os.getenv('XDG_CACHE_HOME')}")
+
+    # Check transformers cache location
+    try:
+        from transformers.utils import TRANSFORMERS_CACHE
+        print(f"TRANSFORMERS_CACHE: {TRANSFORMERS_CACHE}")
+    except:
+        pass
+
+    try:
+        import huggingface_hub
+        print(f"HF Hub cache dir: {huggingface_hub.constants.HF_HUB_CACHE}")
+    except:
+        pass
+    print("="*50)
+    print()
+
     # Set GPU from environment variable
     cuda_visible_devices = os.getenv("CUDA_VISIBLE_DEVICES")
     if cuda_visible_devices:
