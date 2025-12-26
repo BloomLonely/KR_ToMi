@@ -6,11 +6,12 @@ from openai import OpenAI
 from tqdm import tqdm
 import json
 from dotenv import load_dotenv
+from collections import defaultdict
+from datetime import datetime
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
 
 load_dotenv()
-
 
 
 def load_stories(txt_path: str) -> List[List[str]]:
@@ -65,12 +66,14 @@ def load_traces(trace_path: str) -> List[str]:
 
 def create_prompt(context: str, question: str) -> str:
 
-    prompt = f"""Read the following story and answer the question.
-Story:
+    prompt = f"""다음 이야기를 읽고 질문에 답하세요.
+
+이야기:
 {context}
-Question: {question}
-Answer with only the location name. Examples: "box", "kitchen", "basket"
-Answer:"""
+
+질문: {question}
+장소 이름만 답하세요. 예시: "욕조", "양동이", "상자"
+답변:"""
     return prompt
 
 
@@ -118,15 +121,23 @@ def query_openrouter(
 def normalize_answer(answer: str) -> str:
     answer = answer.strip().lower()
 
-    for article in ['the ', 'a ', 'an ']:
-        if answer.startswith(article):
-            answer = answer[len(article):]
+    # 한국어 조사 제거 (은/는, 이/가, 을/를, 에, 에서, 로/으로)
+    korean_particles = [
+        '에서는', '에서도', '에서', '에는', '에도', '에',
+        '으로는', '으로도', '으로', '로는', '로도', '로',
+        '이는', '이도', '이', '가는', '가도', '가',
+        '을는', '을도', '을', '를는', '를도', '를',
+        '은', '는', '와', '과', '의'
+    ]
 
-    for prep in ['in the ', 'at the ', 'inside the ', 'in ', 'at ', 'inside ']:
-        if answer.startswith(prep):
-            answer = answer[len(prep):]
+    for particle in korean_particles:
+        if answer.endswith(particle):
+            answer = answer[:-len(particle)]
+            break
 
+    # 구두점 제거
     answer = answer.replace('.', '').replace(',', '').replace('!', '').replace('?', '')
+    answer = answer.replace('。', '').replace('、', '')
 
     return answer.strip()
 
@@ -150,6 +161,21 @@ def evaluate_joint_accuracy(
     print(f"총 {len(story_groups)}개 스토리 그룹 로드됨")
     print(f"총 {len(stories)}개 질문")
 
+    expected_categories = [
+        "memory",
+        "reality",
+        "first_order_0_tom",
+        "first_order_1_tom",
+        "second_order_0_tom",
+        "second_order_1_tom",
+        "first_order_0_no_tom",
+        "first_order_1_no_tom",
+        "second_order_0_no_tom",
+        "second_order_1_no_tom"
+    ]
+    
+    category_stats = {cat: {'correct': 0, 'total': 0} for cat in expected_categories}
+    
     results = []
     correct_stories = 0
     total_correct_qa = 0
@@ -171,6 +197,14 @@ def evaluate_joint_accuracy(
                 total_correct_qa += 1
             else:
                 all_correct = False
+
+            cat = trace_info['category']
+            if cat not in category_stats:
+                category_stats[cat] = {'correct': 0, 'total': 0}
+            
+            category_stats[cat]['total'] += 1
+            if is_correct:
+                category_stats[cat]['correct'] += 1
 
             group_results.append({
                 'question': qa['question'],
@@ -197,6 +231,11 @@ def evaluate_joint_accuracy(
     joint_accuracy = (correct_stories / total_stories) * 100 if total_stories > 0 else 0
     average_accuracy = (total_correct_qa / total_questions) * 100 if total_questions > 0 else 0
 
+    category_summary = {}
+    for cat, stats in category_stats.items():
+        ratio_str = f"{stats['correct']}/{stats['total']}"
+        category_summary[cat] = ratio_str
+
     summary = {
         'model': model,
         'total_story_groups': total_stories,
@@ -205,6 +244,7 @@ def evaluate_joint_accuracy(
         'total_questions': total_questions,
         'correct_questions': total_correct_qa,
         'average_accuracy': average_accuracy,
+        'category_stats': category_summary,
         'results': results
     }
 
@@ -218,6 +258,14 @@ def evaluate_joint_accuracy(
     print(f"\n총 질문: {total_questions}")
     print(f"정답 질문: {total_correct_qa}")
     print(f"Average Accuracy: {average_accuracy:.2f}%")
+    print("-" * 30)
+    print("카테고리별 정답률:")
+
+    sorted_cats = sorted(category_stats.keys())
+    for cat in sorted_cats:
+        stats = category_stats[cat]
+        print(f"{cat}: {stats['correct']}/{stats['total']}")
+        
     print("="*30)
 
     if output_path:
@@ -230,22 +278,22 @@ def evaluate_joint_accuracy(
 
 def main():
     parser = argparse.ArgumentParser(
-        description="test ToMi 데이터셋 평가"
+        description="Korean ToMi 데이터셋 평가"
     )
     parser.add_argument(
         "--txt-path",
         type=str,
-        default="data/test/test.txt",
+        default="data/korean/test.txt",
     )
     parser.add_argument(
         "--trace-path",
         type=str,
-        default="data/test/test.trace",
+        default="data/korean/test.trace",
     )
     parser.add_argument(
         "--output",
         type=str,
-        default="results/test_results.json",
+        default=None,
     )
 
     args = parser.parse_args()
@@ -254,13 +302,18 @@ def main():
     if not api_key:
         raise ValueError("OPENROUTER_API_KEY가 .env 파일에 설정되지 않았습니다.")
 
-    os.makedirs(os.path.dirname(args.output) if os.path.dirname(args.output) else "results", exist_ok=True)
-
     client = OpenAI(
         base_url="https://openrouter.ai/api/v1",
         api_key=api_key,
     )
     MODEL = "google/gemini-3-flash-preview"
+
+    if args.output is None:
+        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+        model_name = MODEL.replace("/", "_").replace("-", "_")
+        args.output = f"results/result_{model_name}_{timestamp}.json"
+
+    os.makedirs(os.path.dirname(args.output) if os.path.dirname(args.output) else "results", exist_ok=True)
 
     print(f"평가 시작")
     print(f"모델: {MODEL}")

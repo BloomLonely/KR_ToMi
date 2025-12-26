@@ -1,0 +1,203 @@
+{
+  "model": "google/gemini-3-flash-preview",
+  "total_story_groups": 3,
+  "correct_stories": 0,
+  "joint_accuracy": 0.0,
+  "total_questions": 18,
+  "correct_questions": 8,
+  "average_accuracy": 44.44444444444444,
+  "category_stats": {
+    "memory": "3/3",
+    "reality": "3/3",
+    "first_order_0_tom": "1/1",
+    "first_order_1_tom": "0/0",
+    "second_order_0_tom": "0/0",
+    "second_order_1_tom": "0/0",
+    "first_order_0_no_tom": "1/2",
+    "first_order_1_no_tom": "0/3",
+    "second_order_0_no_tom": "0/3",
+    "second_order_1_no_tom": "0/3"
+  },
+  "results": [
+    {
+      "group_id": 0,
+      "all_correct": false,
+      "questions": [
+        {
+          "question": "팬티는 처음에 어디에 있었을까?",
+          "correct_answer": "장바구니",
+          "predicted_answer": "장바구니",
+          "is_correct": true,
+          "type": "true_belief",
+          "category": "memory",
+          "full_trace": "enter_agent_1,enter_agent_0,agent_0_moves_obj,agent_1_exits,memory,true_belief"
+        },
+        {
+          "question": "선우는 팬티를 어디에서 찾을까?",
+          "correct_answer": "식료품 보관함",
+          "predicted_answer": "장바구니",
+          "is_correct": false,
+          "type": "true_belief",
+          "category": "first_order_1_no_tom",
+          "full_trace": "enter_agent_1,enter_agent_0,agent_0_moves_obj,agent_1_exits,first_order_1_no_tom,true_belief"
+        },
+        {
+          "question": "선우는 소율이가 팬티를 어디에서 찾을 거라고 생각할까?",
+          "correct_answer": "식료품 보관함",
+          "predicted_answer": "장바구니",
+          "is_correct": false,
+          "type": "true_belief",
+          "category": "second_order_1_no_tom",
+          "full_trace": "enter_agent_1,enter_agent_0,agent_0_moves_obj,agent_1_exits,second_order_1_no_tom,true_belief"
+        },
+        {
+          "question": "팬티는 실제로 어디에 있을까?",
+          "correct_answer": "식료품 보관함",
+          "predicted_answer": "식료품 보관함",
+          "is_correct": true,
+          "type": "true_belief",
+          "category": "reality",
+          "full_trace": "enter_agent_1,enter_agent_0,agent_0_moves_obj,agent_1_exits,reality,true_belief"
+        },
+        {
+          "question": "소율은 팬티를 어디에서 찾을까?",
+          "correct_answer": "식료품 보관함",
+          "predicted_answer": "장바구니",
+          "is_correct": false,
+          "type": "true_belief",
+          "category": "first_order_0_no_tom",
+          "full_trace": "enter_agent_1,enter_agent_0,agent_0_moves_obj,agent_1_exits,first_order_0_no_tom,true_belief"
+        },
+        {
+          "question": "소율은 선우가 팬티를 어디에서 찾을 거라고 생각할까?",
+          "correct_answer": "식료품 보관함",
+          "predicted_answer": "장바구니",
+          "is_correct": false,
+          "type": "true_belief",
+          "category": "second_order_0_no_tom",
+          "full_trace": "enter_agent_1,enter_agent_0,agent_0_moves_obj,agent_1_exits,second_order_0_no_tom,true_belief"
+        }
+      ]
+    },
+    {
+      "group_id": 1,
+      "all_correct": false,
+      "questions": [
+        {
+          "question": "바지는 처음에 어디에 있었을까?",
+          "correct_answer": "상자",
+          "predicted_answer": "상자",
+          "is_correct": true,
+          "type": "second_order_false_belief",
+          "category": "memory",
+          "full_trace": "enter_agent_0,enter_agent_1,agent_2_enters,agent_0_moves_obj,agent_1_exits,agent_0_exits,agent_2_exits,agent_1_reenters_alt_loc,memory,second_order_false_belief"
+        },
+        {
+          "question": "준우는 바지를 어디에서 찾을까?",
+          "correct_answer": "보물 상자",
+          "predicted_answer": "보물 상자",
+          "is_correct": true,
+          "type": "second_order_false_belief",
+          "category": "first_order_0_no_tom",
+          "full_trace": "enter_agent_0,enter_agent_1,agent_2_enters,agent_0_moves_obj,agent_1_exits,agent_0_exits,agent_2_exits,agent_1_reenters_alt_loc,first_order_0_no_tom,second_order_false_belief"
+        },
+        {
+          "question": "준우는 현우가 바지를 어디에서 찾을 거라고 생각할까?",
+          "correct_answer": "보물 상자",
+          "predicted_answer": "상자",
+          "is_correct": false,
+          "type": "second_order_false_belief",
+          "category": "second_order_0_no_tom",
+          "full_trace": "enter_agent_0,enter_agent_1,agent_2_enters,agent_0_moves_obj,agent_1_exits,agent_0_exits,agent_2_exits,agent_1_reenters_alt_loc,second_order_0_no_tom,second_order_false_belief"
+        },
+        {
+          "question": "바지는 실제로 어디에 있을까?",
+          "correct_answer": "보물 상자",
+          "predicted_answer": "보물 상자",
+          "is_correct": true,
+          "type": "second_order_false_belief",
+          "category": "reality",
+          "full_trace": "enter_agent_0,enter_agent_1,agent_2_enters,agent_0_moves_obj,agent_1_exits,agent_0_exits,agent_2_exits,agent_1_reenters_alt_loc,reality,second_order_false_belief"
+        },
+        {
+          "question": "현우는 바지를 어디에서 찾을까?",
+          "correct_answer": "보물 상자",
+          "predicted_answer": "상자",
+          "is_correct": false,
+          "type": "second_order_false_belief",
+          "category": "first_order_1_no_tom",
+          "full_trace": "enter_agent_0,enter_agent_1,agent_2_enters,agent_0_moves_obj,agent_1_exits,agent_0_exits,agent_2_exits,agent_1_reenters_alt_loc,first_order_1_no_tom,second_order_false_belief"
+        },
+        {
+          "question": "현우는 준우가 바지를 어디에서 찾을 거라고 생각할까?",
+          "correct_answer": "보물 상자",
+          "predicted_answer": "상자",
+          "is_correct": false,
+          "type": "second_order_false_belief",
+          "category": "second_order_1_no_tom",
+          "full_trace": "enter_agent_0,enter_agent_1,agent_2_enters,agent_0_moves_obj,agent_1_exits,agent_0_exits,agent_2_exits,agent_1_reenters_alt_loc,second_order_1_no_tom,second_order_false_belief"
+        }
+      ]
+    },
+    {
+      "group_id": 2,
+      "all_correct": false,
+      "questions": [
+        {
+          "question": "실내화는 처음에 어디에 있었을까?",
+          "correct_answer": "나무 상자",
+          "predicted_answer": "나무 상자",
+          "is_correct": true,
+          "type": "false_belief",
+          "category": "memory",
+          "full_trace": "enter_agent_1,agent_2_enters,enter_agent_0,agent_1_exits,agent_0_moves_obj,agent_2_exits,memory,false_belief"
+        },
+        {
+          "question": "선우는 실내화를 어디에서 찾을까?",
+          "correct_answer": "봉투",
+          "predicted_answer": "나무 상자",
+          "is_correct": false,
+          "type": "false_belief",
+          "category": "first_order_1_no_tom",
+          "full_trace": "enter_agent_1,agent_2_enters,enter_agent_0,agent_1_exits,agent_0_moves_obj,agent_2_exits,first_order_1_no_tom,false_belief"
+        },
+        {
+          "question": "선우는 민재가 실내화를 어디에서 찾을 거라고 생각할까?",
+          "correct_answer": "봉투",
+          "predicted_answer": "나무 상자",
+          "is_correct": false,
+          "type": "false_belief",
+          "category": "second_order_1_no_tom",
+          "full_trace": "enter_agent_1,agent_2_enters,enter_agent_0,agent_1_exits,agent_0_moves_obj,agent_2_exits,second_order_1_no_tom,false_belief"
+        },
+        {
+          "question": "실내화는 실제로 어디에 있을까?",
+          "correct_answer": "봉투",
+          "predicted_answer": "봉투",
+          "is_correct": true,
+          "type": "false_belief",
+          "category": "reality",
+          "full_trace": "enter_agent_1,agent_2_enters,enter_agent_0,agent_1_exits,agent_0_moves_obj,agent_2_exits,reality,false_belief"
+        },
+        {
+          "question": "민재는 실내화를 어디에서 찾을까?",
+          "correct_answer": "나무 상자",
+          "predicted_answer": "나무 상자",
+          "is_correct": true,
+          "type": "false_belief",
+          "category": "first_order_0_tom",
+          "full_trace": "enter_agent_1,agent_2_enters,enter_agent_0,agent_1_exits,agent_0_moves_obj,agent_2_exits,first_order_0_tom,false_belief"
+        },
+        {
+          "question": "민재는 선우가 실내화를 어디에서 찾을 거라고 생각할까?",
+          "correct_answer": "봉투",
+          "predicted_answer": "나무 상자",
+          "is_correct": false,
+          "type": "false_belief",
+          "category": "second_order_0_no_tom",
+          "full_trace": "enter_agent_1,agent_2_enters,enter_agent_0,agent_1_exits,agent_0_moves_obj,agent_2_exits,second_order_0_no_tom,false_belief"
+        }
+      ]
+    }
+  ]
+}
