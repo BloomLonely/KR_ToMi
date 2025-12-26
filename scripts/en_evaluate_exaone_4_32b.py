@@ -1,7 +1,11 @@
 import argparse
 import os
 import sys
+import warnings
 from dotenv import load_dotenv
+
+# Suppress warnings
+warnings.filterwarnings("ignore", category=FutureWarning)
 
 # Load .env BEFORE importing other libraries
 load_dotenv()
@@ -9,7 +13,6 @@ load_dotenv()
 # FORCE set HF_HOME before importing transformers (override system defaults)
 os.environ["HF_HOME"] = os.path.expanduser("~/.cache/huggingface")
 os.environ["HF_HUB_CACHE"] = os.path.expanduser("~/.cache/huggingface/hub")
-os.environ["TRANSFORMERS_CACHE"] = os.path.expanduser("~/.cache/huggingface/hub")
 
 from typing import List, Dict
 import torch
@@ -361,7 +364,7 @@ def main():
         tokenizer = AutoTokenizer.from_pretrained(args.model_path)
         model = AutoModelForCausalLM.from_pretrained(
             args.model_path,
-            torch_dtype="bfloat16",
+            torch_dtype=torch.bfloat16,
             device_map="auto"
         )
 
