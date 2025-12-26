@@ -1,6 +1,15 @@
 import argparse
 import os
 import sys
+from dotenv import load_dotenv
+
+# Load .env BEFORE importing other libraries
+load_dotenv()
+
+# Set HF_HOME before importing transformers
+if not os.getenv("HF_HOME"):
+    os.environ["HF_HOME"] = os.path.expanduser("~/.cache/huggingface")
+
 from typing import List, Dict
 import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer
@@ -8,11 +17,8 @@ from tqdm import tqdm
 import json
 from collections import defaultdict
 from datetime import datetime
-from dotenv import load_dotenv
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
-
-load_dotenv()
 
 
 def load_stories(txt_path: str) -> List[List[str]]:
